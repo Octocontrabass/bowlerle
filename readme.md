@@ -48,6 +48,7 @@ Except for the end-of-data command, all commands are followed by one or more byt
 Bits 7 and 6 determine the type and length of each command, as follows:
 
 | Command | Meaning |
+| --- | --- |
 | `0b00xxxxxx` | One-byte command, compressed run (or end-of-data) |
 | `0b01xxxxxx 0bxxxxxxxx` | Two-byte command, compressed run |
 | `0b10xxxxxx` | One-byte command, literal copy |
